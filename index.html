@@ -56,7 +56,7 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Junyan Wang</a>,</span>
+                <a href="https://scholar.google.com/citations?hl=en&user=5yS_tTUAAAAJ" target="_blank">Junyan Wang</a>,</span>
                 <span class="author-block">
                   <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Zhenhong Sun</a>,</span>
                   <span class="author-block">
@@ -66,7 +66,7 @@
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Xuanbai Chen</a>
                   </span>,
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Weihua Chen</a>
+                    <a href="https://scholar.google.com/citations?user=KWVlYaMAAAAJ&hl=en" target="_blank">Weihua Chen</a>
                   </span>,
                   <span class="author-block">
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Hao Li</a><span>*</span>
@@ -163,7 +163,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Vanilla text-to-image diffusion models struggle with generating accurate human images, commonly resulting in imperfect anatomies such as unnatural postures or disproportionate limbs. Existing methods address this issue mostly by fine-tuning the model with extra images or adding additional controls --- human-centric priors such as pose or depth maps --- during the image generation phase. This paper explores the integration of these human-centric priors directly into the model fine-tuning stage, essentially eliminating the need for extra conditions at the inference stage. We realize this idea by proposing a human-centric alignment loss to strengthen human-related information from the textual prompts within the cross-attention maps. To ensure semantic detail richness and human structural accuracy during fine-tuning, we introduce scale-aware and step-wise constraints within the diffusion process, according to an in-depth analysis of the cross-attention layer. Extensive experiments show that our method largely improves over state-of-the-art text-to-image models to synthesize high-quality human images based on user-written prompts.
           </p>
         </div>
       </div>
@@ -293,7 +293,12 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@inproceedings{chen2023beyond,
+        title={Towards Effective Usage of Human-Centric Priors in Diffusion Models for Text-based Human Image Generation},
+        author={Junyan Wang and Zhenhong Sun and Zhiyu Tan and Xuanbai Chen and Weihua Chen and Hao Li and Cheng Zhang and Yang Song},
+        booktitle={The IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+        year={2024},
+      }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
