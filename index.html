@@ -37,6 +37,15 @@
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
+  <style>
+    .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
@@ -58,28 +67,29 @@
               <span class="author-block">
                 <a href="https://scholar.google.com/citations?hl=en&user=5yS_tTUAAAAJ" target="_blank">Junyan Wang</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="https://scholar.google.com/citations?user=eDiXHP8AAAAJ&hl=en" target="_blank">Zhenhong Sun</a><sup>1</sup>,</span>
+                  <a href="https://scholar.google.com/citations?user=eDiXHP8AAAAJ&hl=en" target="_blank">Zhenhong Sun</a><sup>2</sup>,</span>
                   <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=XprTQQ8AAAAJ&hl=en" target="_blank">Zhiyu Tan</a><sup>2</sup>,
+                    <a href="https://scholar.google.com/citations?user=XprTQQ8AAAAJ&hl=en" target="_blank">Zhiyu Tan</a><sup>3</sup>,
                   </span>
                   <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=UZ8IbowAAAAJ&hl=en" target="_blank">Xuanbai Chen</a><sup>3</sup>,
+                    <a href="https://scholar.google.com/citations?user=UZ8IbowAAAAJ&hl=en" target="_blank">Xuanbai Chen</a><sup>4</sup>,
                   </span>
                   <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=KWVlYaMAAAAJ&hl=en" target="_blank">Weihua Chen</a><sup>4</sup>,
+                    <a href="https://scholar.google.com/citations?user=KWVlYaMAAAAJ&hl=en" target="_blank">Weihua Chen</a><sup>5</sup>,
+                  </span>
+                  <br>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=pHN-QIwAAAAJ&hl=en" target="_blank">Hao Li</a><sup>6*</sup>,
                   </span>
                   <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=pHN-QIwAAAAJ&hl=en" target="_blank">Hao Li</a><sup>2*</sup>,
-                  </span>
-                  <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=vb3l1ZMAAAAJ&hl=en" target="_blank">Cheng Zhang</a><sup>3</sup>,
+                    <a href="https://scholar.google.com/citations?user=vb3l1ZMAAAAJ&hl=en" target="_blank">Cheng Zhang</a><sup>4</sup>,
                   </span>
                   <span class="author-block">
                     <a href="https://scholar.google.com/citations?user=7u3M9hMAAAAJ&hl=en" target="_blank">Yang Song</a><sup>1</sup>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>University of New South Wales <sup>2</sup>Fudan University <sup>3</sup>Carnegie Mellon University <sup>4</sup>Alibaba DAMO Academy<br>CVPR 2024</span>
+                    <span class="author-block"><sup>1</sup>University of New South Wales <sup>2</sup>Australian National University  <sup>3</sup>INF Technology<br> <sup>4</sup>Carnegie Mellon University <sup>5</sup>Alibaba DAMO Academy <sup>6</sup>Fudan University <br>CVPR 2024</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Auther</small></span>
                   </div>
 
@@ -109,7 +119,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/hcplayercvpr2024/hcplayer" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -137,34 +147,46 @@
 </section>
 
 
-<!-- Image carousel -->
 <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- <h2 class="title is-3">Overview Architecture</h2> -->
+        <!-- Your image here -->
+      <img src="static/images/intro.png" alt="overview" width="600" height="400" class="center"/>
+      <h2 class="subtitle has-text-centered">
+        <br>Given a human-written prompt ("a female dancer in a purple dress is jumping"), existing text-to-image model can <br> synthesize pictures with perfect human body (e.g., leg formation in this example).<br>
+      </h2>
+      </div>
+  </div>
+</section>
+
+
+
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
      <div class="item">
-      <!-- Your image here -->
       <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
@@ -173,7 +195,7 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 
 
 <!-- Teaser video-->
@@ -214,46 +236,60 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
+      <h2 class="title is-3">Overview Architecture</h2>
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/overview.png" alt="overview" class="center"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        <br>Overview of the proposed learnable Human-centric Prior layer training in the frozen pre-trained latent diffusion model. The left part shows the process of human-centric text tokens extraction, the middle part indicates the overall process of the HcP layer plugged into the U-Net framework, and the right part shows the HcP layer training with the proposed human-centric alignment loss.<br>
       </h2>
-    </div>
+      </div>
   </div>
-</div>
-</div>
 </section>
 <!-- End image carousel -->
 
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">SDXL-base Results</h2>
+        <!-- Your image here -->
+      <img src="static/images/sdxl_app_original.png" alt="overview" class="center"/>
+      <h2 class="subtitle has-text-centered">
+        <br>Qualitative results on larger diffusion model (SDXL-base) using HcP layer. We leverage the pre-trained SDXL-base model for the ``with HcP" model while keeping it frozen.<br>
+      </h2>
+      </div>
+  </div>
+</section>
 
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">SD V1-5 Results</h2>
+        <!-- Your image here -->
+      <img src="static/images/lora_app_original.png" alt="overview" class="center"/>
+      <h2 class="subtitle has-text-centered">
+        <br>Qualitative comparison with baseline methods on three example prompts. We leverage the pre-trained SD v1-5 model for both ``with LoRA" and ``with HcP" models while keeping it frozen.<br>
+      </h2>
+      </div>
+  </div>
+</section>
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">ControlNet Results</h2>
+        <!-- Your image here -->
+      <img src="static/images/control_app_original.png" alt="overview" class="center"/>
+      <h2 class="subtitle has-text-centered">
+        <br>Comparisons with the controllable HIG application. We selected ControlNet as the basic model for controllable HIG and utilized OpenPose image as the conditional input.<br>
+      </h2>
+      </div>
+  </div>
+</section>
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<section class="hero is-small">
   
   <div class="hero-body">
     <div class="container">
